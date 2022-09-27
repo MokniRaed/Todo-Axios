@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin-top: 10%;
+
 }
 
 .App-logo {
@@ -35,4 +37,194 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body,
+html {
+  height: 100%;
+  
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body,
+ul,
+li {
+  
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+a {
+  text-decoration: none;
+}
+input {
+  border-style: none;
+  background: transparent;
+  outline: none;
+}::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 0.7; 
+}
+button {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80");
+}
+
+h1.demo {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  color: #f5f6ff;
+}
+a.demo {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: rgba(17, 17, 20, 0.8);
+  margin-bottom: 3rem;
+}
+.demo-flex-spacer {
+  flex-grow: 1;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1600px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.webflow-style-input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 2px;
+  padding: 1.4rem 2rem 1.6rem;
+}
+.webflow-style-input :after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 999;
+  height: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-position: 0% 0%;
+  background: linear-gradient(
+    to right,
+    #b294ff,
+    #57e6e6,
+    #feffb8,
+    #57e6e6,
+    #b294ff,
+    #57e6e6
+  );
+  background-size: 500% auto;
+  animation: gradient 3s linear infinite;
+}
+
+.webflow-style-input input {
+  flex-grow: 1;
+  color: #e2e2e2;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  vertical-align: middle;
+}
+
+.webflow-style-input button {
+  color: #7881a1;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  vertical-align: middle;
+  transition: color 0.25s;
+}
+.webflow-style-input button :hover {
+  color: #eff0f2;
+}
+
+.todoContainer {
+  
+  width: 40%;
+  align-self: center;
+  margin: auto;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: #282c34;
+}
+.headerContainer {
+
+  background-color: #dac184;
+  border-radius: 40px;
+  color: rgb(251, 249, 234);
+  height: 45px;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 15px;
+}
+.bodyContainer {
+  align-self: center;
+  width: 90%;
+  padding: 10px;
+  z-index: -1;
+  border-radius: 5px;
+  flex-direction: row;
+  margin: auto;
+  background-color: #1212122f;
+}
+
+.deleteIcon{
+  cursor: pointer;
+  margin: 5px;
+  color: rgb(176, 87, 87);
+  size: 50px;
 }
