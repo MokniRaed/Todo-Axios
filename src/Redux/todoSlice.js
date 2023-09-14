@@ -23,8 +23,11 @@ export const todoSlice = createSlice({
       return stat;
     },
     editTodo: (state, action) => {
-      console.log(action.payload.id, "id action");
-      console.log(action.payload.title, "title action");
+        const { id, title } = action.payload;
+  const todoToEdit = state.find((el) => el.id === id);
+  if (todoToEdit) {
+    todoToEdit.title = title;
+  }
       
     },
     toggleTodo: (state, action) => {
